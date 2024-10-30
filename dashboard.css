@@ -1,0 +1,143 @@
+:root{
+  --primarycolor:linear-gradient(to right, #000, #222c32);
+  --secondarycolor:#fff;
+}
+
+body {
+  /* background: linear-gradient(to right, #000, #222c32); */
+  background: var(--primarycolor);
+  background-color: #222c32;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.dark-theme{
+  --primarycolor:linear-gradient(to right, #837f7f, #222c32);
+  --secondarycolor:#222c32;
+}
+
+.navbar {
+  margin-bottom: 2rem;
+  /* background: linear-gradient(to right, #000, #31414d); */
+  background: var(--primarycolor);
+}
+
+.navbar-brand{
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #2d4a31;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #495057;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+.card {
+  background-color: #2b2e33;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  color: #ffffff;
+}
+
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #fff;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1); 
+}
+
+
+.accordion-button {
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #495057;
+}
+
+.accordion-body {
+  background-color: #2b2e33;
+  color: #ffffff;
+}
+
+.list-group-item {
+  background-color: #2b2e33;
+  color: #ffffff;
+  border: none;
+}
+
+.list-group-item2 {
+  background-color: #2b2e33;
+  color: #ffffff;
+  border: none;
+}
+
+.list-group-item3 {
+  background-color: #2b2e33;
+  color: #ffffff;
+  border: none;
+}
+
+.alert-danger {
+  background-color: #dc3545;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #2d4a31;
+  border-color: #2d4a31;
+  border-radius: 30px;
+}
+
+.btn-primary:hover {
+  background-color: #495057;
+  border-color: #495057;
+  border-radius: 30px;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.notification {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification.warning {
+  background-color: #f44336; 
+  color: white;
+}
+
+
+

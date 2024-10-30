@@ -1,0 +1,2 @@
+# Digital Wallet
+ This Digital Wallet app is a user-friendly and efficient platform designed to simplify financial management for users.  Users can easily monitor their current balance and receive notifications if their funds run low.  With the click of a button, users can expand a form to quickly add funds to their wallet. Users can securely store and manage essential items in categorized sections, such as Cards, Tickets, and Passwords.

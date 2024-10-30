@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Digital Wallet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="addItems.html">Add Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" id="logoutBtn">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" id="icon">Theme</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- Balance section -->
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Current Balance: <span class="balance">4555</span></h5>
+                        <div id="notification" class="alert alert-danger d-none" role="alert">
+                            Your balance is critically low. Kindly recharge!
+                        </div>
+                        <button type="button" class="btn btn-primary" id="addFunds">Add Funds</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item list -->
+
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="d-flex justify-content-between mb-3">
+                    <h5>Your Items</h5>
+                </div>
+                <div class="accordion" id="itemAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="'headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Cards
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#itemAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group">
+                                    <!-- <li class="list-group-item">
+                                        Visa Card (**12)
+                                    </li>
+                                    <li class="list-group-item">
+                                        NayaPay Card (**64)
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Tickets
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#itemAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group2">
+                                    <!-- <li class="list-group-item">Deadpool And Wolverine (26/10/24)</li>
+                                    <li class="list-group-item">Islamabad to Karachi (30/10/24)</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Passwords
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#itemAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-group3">
+                                    <!-- <li class="list-group-item">Gmail Password:  123456</li>
+
+                                    <li class="list-group-item">Facebook Password: Ali124</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="dashboard.js"></script>
+        <script>
+            var icon=document.getElementById("icon");
+
+            icon.onclick=function(){
+                document.body.classList.toggle("dark-theme");
+            }
+        </script>
+</body>
+
+</html>

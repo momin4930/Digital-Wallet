@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login/SignUp</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <!-- For Sign UP -->
+        <div class="form-container sign-up">
+            <form onsubmit="return false">
+                <h1 class="CrA">Create Account</h1>
+                <input type="text" id="signUp-name" placeholder="Name">
+                <input type="email" id="signUp-email" placeholder="Email">
+                <input type="password" id="signUp-pass" placeholder="Password">
+                <input type="number" id="signUp-IB" placeholder="Initial Balance">
+                <button type="button" id="SignUps">Sign Up</button>
+                <!-- <button >Sign Up</button> -->
+            </form>
+        </div>
+        <!-- For Sign IN -->
+        <div class="form-container sign-in">
+            <form onsubmit="return false">
+                <h1 class="CrA">Sign In</h1>
+                <input type="email" id="signIn-email" placeholder="Email">
+                <input type="password" id="signIn-pass" placeholder="Password">
+                <button type="button" id="SignIns">Sign In</button>
+                <!-- <button >Sign In</button> -->
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1 class="CrA">Welcome Back!</h1>
+                    <p class="CrA">Enter your credit details</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1 class="CrA">Hello, Friend!</h1>
+                    <p class="CrA">Register to enjoy</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

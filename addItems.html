@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="addItems.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Digital Wallet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="addItems.html">Add Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" id="icon">Theme</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!--Cards Container -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header customHeader2 text-white">Add Cards</div>
+                    <div class="card-body">
+                        <form id="add-card-form">
+                            <div class="mb-3">
+                                <label for="cardNumber" class="form-label">Card Number</label>
+                                <input type="text" class="form-control" id="cardDets" placeholder="Enter card details">
+                            </div>
+                            <button type="button" class="btn customHeader2 text-white" id="addCardBtn">Add</button>
+                            <button type="button" class="btn customHeader2 text-white" id="editCardBtn">Edit</button>
+                            <button type="button" class="btn customHeader2 text-white" id="removeCardBtn">Remove</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tickets Container -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header customHeader1 text-white">Add Tickets</div>
+                    <div class="card-body">
+                        <form id="add-ticket-form">
+                            <div class="mb-3">
+                                <label for="ticketNumber" class="form-label">Ticket Number</label>
+                                <input type="text" class="form-control" id="ticketDets" placeholder="Enter ticket details">
+                            </div>
+                            <button type="button" class="btn customHeader1 text-white" id="addTicketBtn">Add</button>
+                            <button type="button" class="btn customHeader1 text-white" id="editTicketBtn">Edit</button>
+                            <button type="button" class="btn customHeader1 text-white" id="removeTicketBtn">Remove</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--Passwords Container -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header customHeader3 text-white">Add Passwords</div>
+                    <div class="card-body">
+                        <form id="add-password-form">
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="text" class="form-control" id="passDets" placeholder="Enter password details">
+                            </div>
+                            <button type="button" class="btn customHeader3 text-white" id="addPassBtn">Add</button>
+                            <button type="button" class="btn customHeader3 text-white" id="editPassBtn">Edit</button>
+                            <button type="button" class="btn customHeader3 text-white" id="removePassBtn">Remove</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="addItems.js"></script>
+        <script>
+            var icon=document.getElementById("icon");
+
+            icon.onclick=function(){
+                document.body.classList.toggle("dark-theme");
+            }
+        </script>
+</body>
+
+</html>

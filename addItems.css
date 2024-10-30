@@ -1,0 +1,80 @@
+:root{
+  --primarycolor:linear-gradient(to right, #000, #222c32);
+  --secondarycolor:#fff;
+}
+
+body {
+  /* background: linear-gradient(to right, #000, #222c32); */
+  background: var(--primarycolor);
+  background-color: #222c32;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.dark-theme{
+  --primarycolor:linear-gradient(to right, #837f7f, #222c32);
+  --secondarycolor:#222c32;
+}
+  
+  .navbar {
+    margin-bottom: 2rem;
+    /* background: linear-gradient(to right, #121111, #31414d); */
+    background: var(--primarycolor);
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 30px;
+  }
+  
+  .navbar-nav .nav-link.active {
+    background-color: #2d4a31;
+    border-radius: 30px;
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: #495057;
+    color: #ffffff;
+    border-radius: 30px;
+  }
+  
+  
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    margin-top: 50%;
+    background-color: #222c32;
+    overflow: hidden;
+    width:max-content;
+}
+
+.card-header {
+
+    text-align: center;
+    font-weight: bold;
+    background-color: #2d4a31;
+}
+
+.customHeader1{
+    background-color: #2d2842;
+}
+ 
+.customHeader2{
+    background-color: #3f3918;
+}
+
+.customHeader3{
+    background-color: #36261d;
+}
+  

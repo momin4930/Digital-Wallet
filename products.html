@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Digital Wallet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="addItems.html">Add Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" id="icon">Theme</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Assets/cap (2).png" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Cap</h5>
+                        <p class="card-text">Price: 700 Rs</p>
+                        <button class="btn btn-primary" id="buyCap">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Assets/hoodie.png" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Hoodie</h5>
+                        <p class="card-text">Price: 1500 Rs</p>
+                        <button class="btn btn-primary" id="buyHoodie">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Assets/shirt.png" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Shirt</h5>
+                        <p class="card-text">Price: 1000 Rs</p>
+                        <button class="btn btn-primary" id="buyShirt">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Assets/shoes.png" class="card-img-top" alt="Product 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Shoes</h5>
+                        <p class="card-text">Price: 2500 Rs</p>
+                        <button class="btn btn-primary" id="buyShoes">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Assets/pant.png" class="card-img-top" alt="Product 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Pants</h5>
+                        <p class="card-text">Price: 1700 Rs</p>
+                        <button class="btn btn-primary" id="buyPant">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Assets/jacket.png" class="card-img-top" alt="Product 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Jacket</h5>
+                        <p class="card-text">Price: 4000 Rs</p>
+                        <button class="btn btn-primary" id="buyJacket">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="products.js"></script>
+        <script>
+            var icon=document.getElementById("icon");
+
+            icon.onclick=function(){
+                document.body.classList.toggle("dark-theme");
+            }
+        </script>
+</body>
+</html>
